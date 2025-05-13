@@ -8,13 +8,12 @@
     <title>Política de Privacidad | Bananasnap</title>
     <style>
         :root {
-            --primary: #ffb300;
-            --secondary: #fffbe6;
+            --primary: #222;
+            --secondary: #f7f7f7;
             --text: #222;
-            --accent: #ffe066;
             --border: #e0e0e0;
-            --radius: 12px;
-            --shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.07);
+            --radius: 8px;
+            --shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
         }
 
         html,
@@ -38,39 +37,26 @@
         }
 
         header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
             margin-bottom: 2rem;
         }
 
-        .logo {
-            width: 48px;
-            height: 48px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
-            box-shadow: 0 2px 8px 0 rgba(255, 179, 0, 0.15);
-        }
-
         h1 {
-            font-size: 2rem;
+            font-size: 1.7rem;
             margin: 0;
             color: var(--primary);
+            font-weight: 600;
+            letter-spacing: 0.01em;
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-top: 2.2rem;
             margin-bottom: 0.7rem;
             color: var(--primary);
-            border-left: 4px solid var(--accent);
+            font-weight: 500;
+            border-left: 3px solid #bbb;
             padding-left: 0.5rem;
+            background: none;
         }
 
         p,
@@ -92,7 +78,7 @@
 
         .date {
             font-size: 0.98rem;
-            color: #888;
+            color: #666;
             margin-bottom: 1.5rem;
         }
 
@@ -103,17 +89,26 @@
             color: #aaa;
         }
 
+        a {
+            color: #444;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 1.2rem 0.5rem;
             }
 
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
 
             h2 {
-                font-size: 1.05rem;
+                font-size: 1rem;
             }
         }
     </style>
@@ -122,11 +117,8 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo" aria-label="Bananasnap">🍌</div>
-            <div>
-                <h1>Política de Privacidad de Bananasnap</h1>
-                <div class="date">Vigente desde: 30/08/2024</div>
-            </div>
+            <h1>Política de Privacidad de Bananasnap</h1>
+            <div class="date">Vigente desde: 30/08/2024</div>
         </header>
         <p>Bananasnap se compromete a proteger la privacidad de sus usuarios. Esta Política de Privacidad describe cómo
             recopilamos, usamos y protegemos su información cuando utiliza nuestra aplicación.</p>
