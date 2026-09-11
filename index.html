@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Política de Privacidad de Bananasnap">
+    <meta name="description" content="Política de Privacidad y Eliminación de Cuentas de Bananasnap">
     <title>Política de Privacidad | Bananasnap</title>
     <style>
         :root {
@@ -61,13 +61,15 @@
 
         p,
         ul,
+        ol,
         li {
             font-size: 1rem;
             line-height: 1.7;
             margin: 0 0 1rem 0;
         }
 
-        ul {
+        ul,
+        ol {
             padding-left: 1.2rem;
             margin-bottom: 1.2rem;
         }
@@ -79,6 +81,15 @@
         .date {
             font-size: 0.98rem;
             color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background-color: #fafafa;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem 1.2rem;
+            margin-top: 1rem;
             margin-bottom: 1.5rem;
         }
 
@@ -100,11 +111,11 @@
 
         @media (max-width: 600px) {
             .container {
-                padding: 1.2rem 0.5rem;
+                padding: 1.2rem 1rem;
             }
 
             h1 {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
             h2 {
@@ -118,57 +129,101 @@
     <div class="container">
         <header>
             <h1>Política de Privacidad de Bananasnap</h1>
-            <div class="date">Vigente desde: 30/08/2024</div>
+            <div class="date">Vigente desde: 30/08/2024 | Última actualización: 2026</div>
         </header>
+
         <p>Bananasnap se compromete a proteger la privacidad de sus usuarios. Esta Política de Privacidad describe cómo
-            recopilamos, usamos y protegemos su información cuando utiliza nuestra aplicación.</p>
+            recopilamos, usamos, almacenamos y protegemos su información cuando utiliza nuestra aplicación móvil.</p>
+
         <h2>1. Datos Recopilados</h2>
         <ul>
-            <li><strong>Fotos de Comidas:</strong> Imágenes capturadas por el usuario para el análisis nutricional.</li>
-            <li><strong>Información Nutricional:</strong> Datos generados a partir de las fotos procesadas.</li>
-            <li><strong>Datos de Usuario:</strong> Información personal básica como nombre, correo electrónico y
-                preferencias de usuario.</li>
+            <li><strong>Información de la Cuenta:</strong> Dirección de correo electrónico y datos identificadores de
+                sesión para el acceso seguro mediante enlace mágico (Magic Link).</li>
+            <li><strong>Fotos de Comidas:</strong> Imágenes capturadas con la cámara o seleccionadas de la galería por
+                el usuario para el análisis y reconocimiento nutricional.</li>
+            <li><strong>Información Nutricional y Registros:</strong> Datos y cálculos generados a partir de las fotos
+                procesadas, así como métricas introducidas voluntariamente por el usuario.</li>
+            <li><strong>Grabaciones de Audio:</strong> Archivos de voz capturados únicamente si el usuario utiliza
+                funciones de entrada por dictado dentro de la aplicación.</li>
+            <li><strong>Diagnósticos y Rendimiento:</strong> Registros técnicos de fallos (crash logs) y métricas de
+                rendimiento anónimas gestionadas a través de Firebase Crashlytics para resolver errores del sistema.
+            </li>
+            <li><strong>Identificadores de Dispositivo:</strong> Identificadores técnicos de instalación para la
+                administración de sesiones y notificaciones locales.</li>
         </ul>
+
         <h2>2. Uso de los Datos</h2>
         <ul>
-            <li><strong>Mejorar la Precisión de las Predicciones:</strong> Utilizamos sus fotos y datos nutricionales
-                para mejorar nuestros algoritmos y proporcionar resultados más precisos.</li>
-            <li><strong>Personalizar la Experiencia del Usuario:</strong> Adaptamos la aplicación para satisfacer mejor
-                sus necesidades basadas en sus interacciones y preferencias.</li>
+            <li><strong>Funcionalidad Principal de la Aplicación:</strong> Proveer el servicio de escaneo de alimentos,
+                cálculo de valores nutricionales y sincronización de registros personales.</li>
+            <li><strong>Autenticación y Seguridad:</strong> Validar el inicio de sesión del usuario mediante enlaces de
+                verificación únicos.</li>
+            <li><strong>Mantenimiento y Estabilidad:</strong> Detectar y solucionar incidencias técnicas imprevistas y
+                bloqueos de la aplicación.</li>
         </ul>
-        <h2>3. Compartición de Datos</h2>
-        <p>Por el momento, Bananasnap no comparte sus datos con terceros. Sin embargo, nos reservamos el derecho de
-            actualizar esta política en el futuro para permitir la compartición de datos con terceros. Cualquier cambio
-            en esta práctica será comunicado de manera adecuada, y usted tendrá la opción de modificar sus preferencias
-            en cuanto a la compartición de datos.</p>
+
+        <h2>3. Proveedores de Servicios y Compartición de Datos</h2>
+        <p>Bananasnap no comercializa ni vende datos personales de los usuarios a redes publicitarias o terceros. Para
+            el funcionamiento de la app, utilizamos proveedores de infraestructura cloud que procesan información bajo
+            estrictos estándares de confidencialidad:</p>
+        <ul>
+            <li><strong>Supabase:</strong> Alojamiento de base de datos segura y gestión de autenticación de usuarios.
+            </li>
+            <li><strong>Google Firebase / Crashlytics:</strong> Monitoreo de estabilidad y análisis de fallos en tiempo
+                real.</li>
+            <li><strong>Servicios de Procesamiento de IA:</strong> Análisis automatizado de imágenes para el
+                reconocimiento nutricional.</li>
+        </ul>
+
         <h2>4. Seguridad de los Datos</h2>
-        <p>Bananasnap implementa medidas de seguridad estándar de la industria para proteger sus datos contra accesos no
-            autorizados, alteraciones, divulgaciones o destrucción. Estas medidas incluyen encriptación de datos y
-            controles de acceso internos.</p>
-        <h2>5. Derechos de los Usuarios</h2>
-        <p>Usted tiene derecho a acceder, corregir o eliminar sus datos en cualquier momento. Para hacerlo, puede
-            ponerse en contacto con nuestro equipo de soporte a través de <a
-                href="mailto:bananasnapp@gmail.com">bananasnapp@gmail.com</a>. También puede ajustar sus preferencias de
-            privacidad en la configuración de la aplicación.</p>
+        <p>Todos los datos transmitidos entre la aplicación y nuestros servidores externos viajan cifrados en tránsito
+            mediante el protocolo seguro HTTPS/TLS. Aplicamos controles de acceso restringido para proteger la
+            información contra accesos no autorizados o alteraciones.</p>
+
+        <section id="eliminacion-cuenta">
+            <h2>5. Solicitud de Eliminación de Cuenta y Datos (Account Deletion)</h2>
+            <p>De conformidad con las políticas de protección de datos y de Google Play, cualquier usuario tiene el
+                derecho de solicitar la eliminación definitiva de su cuenta de Bananasnap y de todos los datos
+                personales asociados.</p>
+
+            <div class="highlight-box">
+                <p><strong>Pasos para solicitar la eliminación de su cuenta:</strong></p>
+                <ol>
+                    <li><strong>Vía correo electrónico (desde cualquier navegador web, sin requerir la app
+                            instalada):</strong> Envíe una solicitud por correo a <a
+                            href="mailto:bananasnapp@gmail.com">bananasnapp@gmail.com</a> con el asunto <em>"Solicitud
+                            de eliminación de cuenta - Bananasnap"</em>. En el cuerpo del mensaje, indique la dirección
+                        de correo electrónico vinculada a su cuenta.</li>
+                    <li><strong>Desde la aplicación:</strong> Ingrese a los ajustes de su perfil dentro de Bananasnap y
+                        seleccione la opción de solicitar baja de cuenta.</li>
+                </ol>
+                <p><strong>¿Qué datos se eliminan?</strong></p>
+                <ul>
+                    <li>Su identificador de usuario y dirección de correo electrónico en nuestros servidores de
+                        autenticación.</li>
+                    <li>Todas las fotos de alimentos subidas a nuestros servidores de almacenamiento.</li>
+                    <li>Todo el historial de análisis y registros nutricionales guardados.</li>
+                </ul>
+                <p><strong>Plazo de retención:</strong> La eliminación se procesa de forma definitiva en un plazo no
+                    mayor a 30 días posteriores a la recepción de la solicitud.</p>
+            </div>
+        </section>
+
         <h2>6. Menores de Edad</h2>
-        <p>Bananasnap está disponible para usuarios de todas las edades, incluidos menores de edad. Si usted es menor de
-            18 años, debe obtener el permiso de un padre o tutor antes de utilizar la aplicación.</p>
+        <p>Bananasnap no recopila intencionalmente datos de menores de 13 años sin el debido consentimiento de un
+            progenitor o tutor legal. Si detectamos registros de un menor sin dicha autorización, se procederá a su
+            eliminación inmediata.</p>
+
         <h2>7. Cambios en la Política</h2>
-        <p>Bananasnap puede actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio será notificado a
-            través de la aplicación o por otros medios razonables. Su uso continuado de la aplicación después de la
-            notificación de cambios constituye su aceptación de los mismos.</p>
+        <p>Podemos actualizar esta Política de Privacidad periódicamente para reflejar mejoras operativas o exigencias
+            legales. Las modificaciones serán publicadas en esta misma página con la fecha de última actualización.</p>
+
         <h2>8. Contacto</h2>
-        <p>Si tiene preguntas o preocupaciones sobre esta Política de Privacidad, por favor contáctenos a través de <a
-                href="mailto:bananasnapp@gmail.com">bananasnapp@gmail.com</a>.</p>
-        <h2>9. Conservación de los Datos</h2>
-        <p>Las fotos de comidas y la información nutricional podrán conservarse mientras la cuenta del usuario 
-            permanezca activa y mientras sean necesarias para operar, mantener y mejorar los servicios de Bananasnap.
-            El usuario puede solicitar la eliminación de sus datos en cualquier momento contactándose a<a
-                href="mailto:bananasnapp@gmail.com">bananasnapp@gmail.com</a> 
-            Una vez recibida la solicitud, los datos serán eliminados dentro de un plazo razonable, salvo obligación 
-            legal de conservación.</p>
+        <p>Si tiene inquietudes acerca de esta política o sobre el tratamiento de su información, puede comunicarse con
+            nosotros en: <a href="mailto:bananasnapp@gmail.com">bananasnapp@gmail.com</a>.</p>
+
         <footer>
-            &copy; 2024 Bananasnap. Todos los derechos reservados.
+            &copy; 2026 Bananasnap. Todos los derechos reservados.
         </footer>
     </div>
 </body>
